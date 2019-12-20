@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
     ...
 }
 ```
+
 Use the filters below to get the information you need from your files.
 
 ## Filter: Duration
@@ -30,6 +31,7 @@ In a Nunjucks template, you can use the following filter on a variable or expres
 ```html
 {{ path_to_file | duration }}
 ```
+
 This will return the duration of your audio file in the following (iTunes approved?) syntax: `HH:MM:SS` i.e. `01:05:22`
 
 ## Filter: File Size
@@ -42,4 +44,4 @@ This filter (universal) will return the file size of your audio file in (iTunes 
 
 ## Feedback
 
-This was quick and dirty based on this twitter thread. If you have feedback, requests, etc. I'm all ears. If you have ideas for improving, I'll 100% accept pull requests of help
+This was quick and dirty based on this twitter thread. If you have feedback, requests, etc. I'm all ears. If you have ideas for improving, I'll 100% accept pull requests of help.
