@@ -9,9 +9,7 @@ module.exports = {
         
         eleventyConfig.addNunjucksAsyncFilter("duration", async function(filePath, callback) {
             let duration = await getDuration(filePath);
-            setTimeout(function() {           
-                callback(null, duration);
-            }, 100);
+            callback(null, duration);
         });
         
         
