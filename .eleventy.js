@@ -11,6 +11,10 @@ module.exports = {
             let duration = await getDuration(filePath);
             callback(null, duration);
         });
+        eleventyConfig.addLiquidFilter("duration", async function(filePath) {
+            let duration = await getDuration(filePath);
+            return duration;
+        });
         
         
         eleventyConfig.addFilter("filesize", filesize);
